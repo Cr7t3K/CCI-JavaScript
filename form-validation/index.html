@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Validation de Formulaire</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-gray-100 flex items-center justify-center h-screen">
+        <div class="bg-white p-8 rounded shadow-md w-2/4">
+            <form id="signupForm" class="space-y-4">
+                <div>
+                    <label for="username" class="block">Nom d'utilisateur:</label>
+                    <input type="text" id="username" class="border border-gray-300 p-2 rounded w-full" placeholder="Votre nom d'utilisateur">
+                    <p id="usernameError" class="text-red-500 text-xs hidden">Le nom d'utilisateur doit contenir au moins 5 caractères.</p>
+                </div>
+                <div>
+                    <label for="email" class="block">Adresse e-mail:</label>
+                    <input type="text" id="email" class="border border-gray-300 p-2 rounded w-full" placeholder="Votre adresse e-mail">
+                    <p id="emailError" class="text-red-500 text-xs hidden">L'adresse e-mail doit contenir un '@'.</p>
+                </div>
+                <button id="submitForm" type="submit" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">Soumettre</button>
+            </form>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
