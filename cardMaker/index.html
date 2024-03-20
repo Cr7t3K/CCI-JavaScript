@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Créateur de Cartes de Vœux</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-gray-200 flex flex-col items-center justify-center min-h-screen">
+        <form id="form" class="bg-white p-8 rounded-lg shadow-lg">
+            <div class="mb-4">
+                <label for="messageInput" class="block text-sm font-medium text-gray-700">Votre message :</label>
+                <textarea id="messageInput" rows="4" class="mt-1 block w-full p-2.5 border border-gray-300 rounded-lg" placeholder="Tapez votre message ici..."></textarea>
+            </div>
+            <div class="grid grid-cols-2 gap-6">
+                <div>
+                    <label for="fontSizeSelect" class="block text-sm font-medium text-gray-700">Taille de la police :</label>
+                    <select id="fontSizeSelect" class="mt-1 block w-full p-2.5 border border-gray-300 rounded-lg">
+                        <option value="text-xs">Petit</option>
+                        <option value="text-lg">Moyen</option>
+                        <option value="text-2xl">Grand</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="textColorInput" class="block text-sm font-medium text-gray-700">Couleur du texte :</label>
+                    <input type="color" id="textColorInput" class="mt-1 block w-full h-10 border border-gray-300 rounded-lg">
+                </div>
+                <div>
+                    <label for="bgColorInput" class="block text-sm font-medium text-gray-700">Couleur de fond :</label>
+                    <input type="color" id="bgColorInput" class="mt-1 block w-full h-10 border border-gray-300 rounded-lg">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">URL de l'image de fond :</label>
+                    <input type="url" id="imageUrlInput" class="mt-1 block w-full p-2.5 border border-gray-300 rounded-lg">
+                </div>
+            </div>
+            <button id="applySettings" type="submit" class="mt-6 w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Appliquer les réglages</button>
+        </form>
+        <div id="cardPreview" class="mt-8 p-5 w-full max-w-lg rounded shadow-lg text-center bg-white">
+            <img src="" alt="" class="mb-3" id="img">
+            <p id="cardText" class="font-bold">Votre message apparaîtra ici...</p>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
+
