@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Change Background Color</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+            body {
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body class="h-screen flex justify-center items-center" id="body">
+        <div class="space-x-2">
+            <button id="blueBtn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Bleu</button>
+            <button id="whiteBtn" class="bg-slate-100 hover:bg-gray-200 text-black font-bold py-2 px-4 rounded">Blanc</button>
+            <button id="redBtn" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Rouge</button>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
